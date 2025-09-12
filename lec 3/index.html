@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive CSS Examples</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /* Navigation Bar */
+        ul {
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: flex-end;
+            text-decoration: none;
+        }
+
+        li {
+            padding: 10px;
+            margin: 20px;
+            list-style: none;
+        }
+
+        /* Main Content Area */
+        main {
+            background-color: azure;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 100px;
+        }
+
+        /* CSS Selectors Example */
+        .selectors-section h1 {
+            color: red;
+            border: 5px solid black;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        /* Box Model Examples */
+        .box-model-section {
+            background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            padding: 20px;
+        }
+
+        .box-example {
+            background-color: antiquewhite;
+            margin: 5px;
+            height: 50px;
+            width: 100px;
+            padding: 25px;
+        }
+
+        /* Circular Elements */
+        .circular-section {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            padding: 20px;
+        }
+
+        .circular-div {
+            background-color: antiquewhite;
+            color: red;
+            margin-left: 15px;
+            margin-bottom: 10px;
+            padding-bottom: 50px;
+            height: 100px;
+            width: 100px;
+            border: 10px solid black;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Landing Page Elements */
+        .landing-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .landing-img {
+            height: 250px;
+            margin: 20px 0;
+        }
+
+        .signup-button {
+            background-color: rgb(213, 213, 238);
+            padding: 10px 20px;
+            border: 2px solid #333;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .signup-button:hover {
+            background-color: rgb(193, 193, 218);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Section Headers */
+        .section-header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin: 20px 0 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <li>Feedback</li>
+    </ul>
+
+    <!-- CSS Selectors Section -->
+    <div class="section-header">CSS Selectors Example</div>
+    <div class="selectors-section">
+        <h1>Main Heading .</h1>
+        <main>
+            <div>
+                <p>harry met .</p>
+            </div>
+            <div>
+                <h1>Nested Heading </h1>
+                <p>hello</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Box Model Section -->
+    <div class="section-header">Box Model & Flexbox Layout</div>
+    <div class="box-model-section">
+        <div class="box-example">Box-1</div>
+        <div class="box-example">Box-2</div>
+        <div class="box-example">Box-3</div>
+        <div class="box-example">Box-4</div>
+    </div>
+
+    <!-- Circular Elements Section -->
+    <div class="section-header">Circular Elements with Box Model</div>
+    <div class="circular-section">
+        <div class="circular-div">
+            <p>Circle 1</p>
+        </div>
+        <div class="circular-div">
+            <p>Circle 2</p>
+        </div>
+        <div class="circular-div">
+            <h1>Circle 3</h1>
+        </div>
+    </div>
+
+    <!-- Landing Page Section -->
+    <div class="section-header">Landing Page Layout</div>
+    <main class="landing-section">
+        <img src="nature.jpeg.jpg" alt="Landing Page Image" class="landing-img">
+        <h1>Invest in Everything</h1>
+        <p>Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.</p>
+        <button class="signup-button">Sign Up for Free</button>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <p> 2024 Comprehensive CSS Examples. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
