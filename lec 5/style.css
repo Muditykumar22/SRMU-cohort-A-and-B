@@ -1,0 +1,88 @@
+/* Simple clean theme overrides */
+
+:root {
+  --bg: #f7f7f9;
+  --card-bg: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --primary: #0d6efd;
+  --radius: 12px;
+  --shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Navbar tweaks */
+.navbar {
+  box-shadow: var(--shadow);
+  background: #fff !important;
+}
+
+/* Layout */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 24px;
+}
+
+/* Cards */
+.card {
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease;
+  background: var(--card-bg);
+  box-shadow: var(--shadow);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-title {
+  margin-bottom: .5rem;
+}
+
+.card-text {
+  color: var(--muted);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  border-radius: 999px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.btn-primary:hover {
+  filter: brightness(0.95);
+}
+
+/* Forms */
+.form-select, .form-control {
+  border-radius: 10px;
+}
+
+/* Icons */
+section {
+  padding: 24px;
+}
+
+.bi {
+  font-size: 32px;
+  color: var(--primary);
+}
+
+
