@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container hidden" id="auth-section">
+    <h2>Sign In</h2>
+    <input type="text" id="userId" placeholder="Enter ID"><br>
+    <input type="password" id="userPass" placeholder="Enter Password"><br>
+    <button onClick="signIn()">Sign In</button>
+    <button onclick="showSignUp()">Sign Up</button>
+  </div>
+
+  <div class="container" id="signup-section">
+    <h2>Sign Up</h2>
+    <input type="text" id="newUser" placeholder="Enter New ID"><br>
+    <input type="password" id="newPass" placeholder="Enter New Password"><br>
+    <button onClick="signUp()">Sign Up</button>
+    <button onclick="showSignIn()">Back</button>
+  </div>
+
+  <div class="container hidden" id="todo-section">
+    <h2>TODO LIST</h2>
+    <input type="text" id="todoInput" placeholder="Enter a task">
+    <input type="time" id="todoTime" placeholder="Set Time">
+    <button onClick="addTodo()">Add</button>
+    <ul id="todoList"></ul>
+    <button onClick="signOut()">Sign Out</button>
+  </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
